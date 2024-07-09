@@ -9,19 +9,20 @@
 Create DATABASE Netflix;
 
 --------------------------------------------------------------------------------
-/*				               Create Stocks Table         	 		          */
---------------------------------------------------------------------------------
-CREATE TABLE netflix 
-(
-   s_index VARCHAR (50),
-   s_date DATE,
-   s_open numeric(10,2),
-   s_high numeric(10,2),
-   s_low numeric(10,2),
-   s_close numeric(10,2),
-   adj_close numeric(10,2),
-   volume bigint
-);
+/*				               Create Netflix Table         	 		      */
+-------------------------------------------------------------------------------- 
+CREATE TABLE netflix(
+    show_id         VARCHAR(255),
+    type            VARCHAR(255),         
+    title           TEXT,
+    director        TEXT,
+    country         VARCHAR(255),
+    date_added      DATE,
+    release_year    INT,
+    rating          VARCHAR(255),
+    duration        VARCHAR(255),
+    listed_in       VARCHAR(255)
+    );
 
 --------------------------------------------------------------------------------
 /*				                 Populate Table         	 		          */
